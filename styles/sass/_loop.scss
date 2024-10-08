@@ -1,0 +1,11 @@
+@for $i from 0 to 2 {
+  .my-card-#{$i} {
+    padding-top: $i * 20px;
+  }
+  .oone-card {
+    background-color: rgba(233, 228, 213, 1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(233, 228, 213, 1);
+  }
+}

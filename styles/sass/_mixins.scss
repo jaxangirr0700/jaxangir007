@@ -1,0 +1,38 @@
+@mixin button($bg-color: #198c36, $color: #fff, $padding: 0) {
+  background-color: $bg-color;
+  color: $color;
+  padding: $padding;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($bg-color, 10%);
+  }
+  &:active {
+    background-color: darken($bg-color, 10%);
+  }
+}
+@mixin one-card($bg-color: white, $color: rgba(22, 58, 36, 1)) {
+  padding: 0;
+  display: flex;
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin buttonn($bg-color: #2e623b, $color: #fff, $padding: 0) {
+  background-color: $bg-color;
+  color: $color;
+  padding: 20px;
+  font-size: 20px;
+
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($bg-color, 10%);
+  }
+  &:active {
+    background-color: darken($bg-color, 10%);
+  }
+}
+.button {
+  @include buttonn;
+}
